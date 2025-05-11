@@ -95,6 +95,7 @@ var (
 			ProxyEndpoint: os.Getenv("HTTPS_PROXY"),
 		},
 		NoCache:    false,
+		Filters:    []string{"Pod", "Deployment"},
 		Repository: defaultK8sGPTRepository,
 		Version:    defaultK8sGPTVersion,
 	}
